@@ -23,9 +23,3 @@ const connect = function () {
 }
 
 module.exports = {connect}
-
-// rl.question('Whats you name? Nicknames are also cool: ',
-// (answer1) => {
-//   rl.question('Whats an activity you like doing? : ',
-//   (answer2) => {
-//     rl.question('What do you listen to while doing that?: ',
