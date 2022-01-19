@@ -22,9 +22,6 @@ const connect = function () {
   return conn;
 }
 
-console.log("Connecting ... ");
-
-
 module.exports = {connect}
 
 // rl.question('Whats you name? Nicknames are also cool: ',
