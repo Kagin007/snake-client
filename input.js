@@ -31,6 +31,12 @@ const handleUserInput = function (data) {
       case ('d'):
         connection.write('Move: right')
         break;
+      case ('x'):
+        connection.write('Say: YOOO')
+        break;
+      case ('z'):
+        connection.write('Say: WAZZUP')
+        break;
       default:
         console.log('wrong key')
   }
