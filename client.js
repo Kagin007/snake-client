@@ -11,10 +11,11 @@ const connect = function () {
 
   conn.on('connect', () => {
     console.log("Successfully connected to game server")
-    conn.write("Name: ASS")
+    conn.write("Name: ACS")
+    setTimeout(()=> conn.write("Move: up"), 100)
   })
 
-  conn.on('data', (input) => {
+    conn.on('data', (input) => {
     console.log(input)
   })
 
@@ -25,3 +26,9 @@ console.log("Connecting ... ");
 
 
 module.exports = {connect}
+
+// rl.question('Whats you name? Nicknames are also cool: ',
+// (answer1) => {
+//   rl.question('Whats an activity you like doing? : ',
+//   (answer2) => {
+//     rl.question('What do you listen to while doing that?: ',
